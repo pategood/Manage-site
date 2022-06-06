@@ -10,4 +10,12 @@
 //   return date && date !== 1000 && date !== '1970-01-01T00:00:01.000+00:00' ? moment(date).format(format) : '';
 // };
 
-// export { formatDate };
+
+
+import dayjs from 'dayjs';
+
+const formatDate = (date: string | number, format = 'YYYY-MM-DD HH:mm:ss'): string => { 
+  return date && date !== 1000 && date !== '1970-01-01T00:00:01.000+00:00' ? dayjs(date).format(format) : '';
+}
+
+export { formatDate };

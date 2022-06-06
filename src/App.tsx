@@ -1,8 +1,14 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import logo from './assets/images/logo.svg';
 import './App.css';
+// import { formatDate } from '@/utils/formatDate';
+// import { formatDate }  from './utils/formatDate'
 
 function App() {
+  useEffect(() => {
+    // console.log( formatDate(1000));
+  }, []);
+
   return (
     <div className="App">
       <header className="App-header">
