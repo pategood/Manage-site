@@ -4,7 +4,7 @@
  * @param filename 文件名
  * @returns
  */
-const blobToExcel = (res, filename) => {
+const blobToExcel = (res:any, filename:string) => {
   const blob = new Blob([res], { type: 'application/vnd.ms-excel' });
   const blobUrl = window.URL.createObjectURL(blob);
   const a = document.createElement('a');
